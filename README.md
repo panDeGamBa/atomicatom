@@ -1,7 +1,5 @@
 
 <img src="./src/assets/img/logo.png" width="120"/>
-<br/>
-<br/>
 
 # Atomic Atom
 A small library for little components based in atomic design
