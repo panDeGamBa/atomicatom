@@ -1,0 +1,69 @@
+%h1 {
+    @include text(h1, primary, 400, inherit, center);
+
+    line-height: 50px;
+}
+
+%h2 {
+    @include text(h2, primary, 400, inherit, center);
+
+    margin-bottom: 40px;
+}
+
+%h3 {
+    @include text(h3, black, 400, inherit, left);
+
+    line-height: 32px;
+}
+
+%h4 {
+    @include text(h4, primary, 400, inherit, left);
+
+    line-height: 38px;
+}
+
+%text--big {
+    @include text(textBig, primary, 400, inherit, left);
+}
+
+%text--semiBig {
+    @include text(textSemiBig, black, 400, inherit, left);
+}
+
+%text {
+    @include text(text, black, 400, inherit, left);
+
+    line-height: 27px;
+}
+
+%text--small {
+    @include text(textSmall, black, 400, inherit, left);
+
+    line-height: 27px;
+}
+
+%text--nav {
+    @include text(textNav, black, 600, inherit, left);
+
+    cursor: pointer;
+}
+
+%section {
+    padding: 65px 0;
+}
+
+%button {
+    @include text(text, primary, 400, uppercase, left);
+
+    font-family: 'Open sans';
+    width: fit-content;
+    padding: 15px 20px;
+    border-radius: 2px;
+    background: getColor(primary);
+    color: getColor(white);
+    cursor: pointer;
+
+    &:hover {
+        background: getColor(primaryHover);
+    }
+}

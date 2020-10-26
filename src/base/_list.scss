@@ -1,0 +1,31 @@
+$colors: (
+    white: #fff,
+    primary: #FE4B75,
+    primaryDark: rgb(180, 103, 219),
+    primaryHover: #4b6b7a,
+    secondary: #8005DE,
+    grey: #E2E4E7,
+    greyDark: grey,
+    greyHover: #F8F9FA,
+    greyActive: #EDEFF0,
+    greyBlue: #e8eff1,
+    black: #404347,
+    subHeaderBg: #f0f0f0,
+    success: #18ca86,
+    error: #e63553
+);
+
+$fontSizes: (
+    h1: 7.5rem,
+    h2: 3.4rem,
+    h3: 2.8rem,
+    h4: 2.2rem,
+    text: 1.7rem,
+    textSemiBig: 1.9rem,
+    textBig: 2.2rem,
+    textSmall: 1.3rem,
+    textNav: 1.5rem
+);
+
+$generics: (box-shadow: 0 2px 10px 0 rgba(37, 50, 56, .1),
+    border-radius: 3px);

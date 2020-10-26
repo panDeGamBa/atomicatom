@@ -1,0 +1,14 @@
+$mediaSizes: (
+    xl:'1500',
+    l:'1250',
+    m:'935',
+    s:'755',
+);
+
+$mediaQuery: (s:'only screen and (max-width:'+map-get($mediaSizes, s)+'px)',
+    m:'only screen and (min-width:'+(map-get($mediaSizes, s))+'px) and (max-width:'+map-get($mediaSizes, m)+'px)',
+    l:'only screen and (min-width:'+(map-get($mediaSizes, m))+'px) and (max-width:'+map-get($mediaSizes, l)+'px)',
+    xl:'only screen and (min-width:'+(map-get($mediaSizes, l))+'px)',
+
+    sUp:'only screen and (min-width:'+map-get($mediaSizes, s)+'px)',
+);

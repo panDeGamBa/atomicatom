@@ -1,0 +1,23 @@
+{
+    "extends": "standard",
+    "env": {
+        "amd": true,
+        "browser": true,
+        "jasmine": true
+    },
+    "globals": {
+        "App": true
+    },
+    "rules": {
+        "indent": ["error", 4],
+        "space-before-function-paren": ["error", {
+            "anonymous": "always",
+            "named": "never",
+            "asyncArrow": "always"
+        }],
+        "semi": ["error", "always"],
+        "one-var": 0,
+        "max-len": ["error", 120],
+        "eqeqeq": ["warn", "always"]
+    }
+}

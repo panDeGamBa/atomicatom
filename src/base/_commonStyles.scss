@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: getColor(black);
+    cursor: default !important;
+    background: getColor(white);
+    font-size: 62.5%;
+}
+
+p {
+    margin: 0;
+    font-size: getFontSize(text);
+    line-height: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: getColor(primary);
+    font-size: getFontSize(text);
+}
+
+h1 {
+    font-size: getFontSize(h1);
+    margin: 0;
+    line-height: 78px;
+    letter-spacing: -4px;
+}
+
+h2 {
+    font-size: getFontSize(h2);
+    margin: 0;
+    letter-spacing: -.5px;
+}
+
+h3 {
+    font-size: getFontSize(h3);
+    margin: 0;
+}
+
+h4 {
+    font-size: getFontSize(h4);
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+input {
+    padding: 10px 20px;
+    font-size: getFontSize(text);
+    letter-spacing: 0.2px;
+    border: solid 1px getColor(grey);
+    outline: none;
+}
+
+button {
+    width: 100px;
+    border: none;
+    font-size: getFontSize(text);
+    background: getColor(primary);
+    color: getColor(white);
+    outline: none;
+    cursor: pointer;
+}
+
+label{
+    font-size: getFontSize(text);
+    display: block;
+    margin-bottom: 10px;
+}
+
+code, pre {
+    font-size: getFontSize(text);
+    background: getColor(white);
+    padding: 10px 20px;
+    width: 100%;
+    display: block;
+    border-radius: 2px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+}
+
+pre {
+    background: getColor(white);
+}
+
+small {
+    font-size: getFontSize(textSmall);
+}
+
+.content {
+    margin: 0 auto;
+    position: relative;
+
+    @media #{getMediaQuery(xl)} {
+        width: 1200px;
+    }
+
+    @media #{getMediaQuery(l)} {
+        width: 900px;
+    }
+
+    @media #{getMediaQuery(m)} {
+        width: 720px;
+    }
+
+    @media #{getMediaQuery(s)} {
+        width: 100%;
+    }
+}
+
+.--gradient {
+    background: rgb(18,194,233);
+    background: linear-gradient(90deg, getColor(primary) 0%, getColor(secondary) 100%);
+}
+
+.--gradientText {
+    background: linear-gradient(90deg, getColor(primary) 0%, getColor(secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.--greyBlue {
+    background: getColor(geryBlue);
+}
+
+.--sucess {
+    color: getColor(success)
+}
+
+.--error {
+    color: getColor(error)
+}
+
+.--hidden {
+    display: none !important;
+}
