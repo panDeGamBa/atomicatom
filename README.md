@@ -1,5 +1,5 @@
 
-<img src="./src/assets/img/logo.png" width="120"/>
+<img src="https://raw.githubusercontent.com/panDeGamBa/atomicatom/main/src/assets/img/logo.png" width="120"/>
 
 # Atomic Atom
 A small library for little components based in atomic design
